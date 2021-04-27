@@ -6,6 +6,11 @@
       href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body,
       html {
@@ -19,7 +24,7 @@
       }
       .container {
         display: flex;
-        width: 70%;
+        width: 65%;
         height: 100%;
         flex-direction: column;
         margin: auto;
@@ -53,15 +58,45 @@
         height: 100%;
         overflow: scroll;
       }
+      .npr-logo {
+        top: 50%;
+        left: 17.5%;
+        transform: translate(0, -50%);
+        position: relative;
+        height: 4vh;
+      }
+      .header {
+        overflow: auto;
+        position: relative;
+      }
+      .center {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+      .title {
+        display: block;
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        margin: 2vh;
+        font-size: 1.9em;
+      }
     </style>
   </head>
   <body>
+    <div class="header">
+      <div class="center">
+        <img
+          class="npr-logo"
+          src="https://media.npr.org/chrome_svg/npr-logo.svg"
+        />
+      </div>
+      <span class="title">Inequality Today!</span>
+    </div>
     <div class="container">
       <div class="first">
         <div class="video" style="--aspect-ratio: 3 / 4">
-          <iframe
-            src="https://www.youtube.com/embed/5Tp-uyZFRoo"
-          ></iframe>
+          <iframe src="https://www.youtube.com/embed/5Tp-uyZFRoo"></iframe>
         </div>
       </div>
       <div class="second">
